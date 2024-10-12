@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Inter, Noto_Kufi_Arabic } from "next/font/google";
+
 import "./globals.css";
+import Header from "../../components/header/Header";
 const KufiArabic = Noto_Kufi_Arabic({
   subsets: ["arabic"],
   weight: ["300", "500"],
@@ -29,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={KufiArabic.className}>{children}</body>
+      <body className={KufiArabic.className}>
+        <Header />
+        <main> {children}</main>
+      </body>
     </html>
   );
 }
