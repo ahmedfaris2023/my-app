@@ -1,4 +1,4 @@
-import ArticleItem from "../../../components/articles/ArticleItem";
+import ArticleItem from "../../components/articles/ArticleItem";
 import { Article } from "@/utils/types";
 const ArticlePage = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
