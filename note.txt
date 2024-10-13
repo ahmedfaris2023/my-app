@@ -1,0 +1,6 @@
+more about routing:
+
+.Route Group ex :(folder)
+.Private Folder ex:_folder
+.Catch-All Route Segment ex:[...folder]
+.Optional Catch-All Route Segment Ex:[[...folder]]
