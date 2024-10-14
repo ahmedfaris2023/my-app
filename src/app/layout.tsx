@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import { Inter, Noto_Kufi_Arabic } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 
 import "./globals.css";
 import Header from "../components/header/Header";
@@ -34,6 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={KufiArabic.className}>
         <Header />
+        <ToastContainer theme="colored" position="top-center" />
         <main> {children}</main>
         <Footer />
       </body>
