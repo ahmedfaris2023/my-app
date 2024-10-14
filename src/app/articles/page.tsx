@@ -1,7 +1,10 @@
 import ArticleItem from "../../components/articles/ArticleItem";
 import { Article } from "@/utils/types";
 const ArticlePage = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store",
+    // next: { revalidate:50 },
+  });
   if (!response.ok) {
     throw new Error("Failded to fetch articles");
   }
