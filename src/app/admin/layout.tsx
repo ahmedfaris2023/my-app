@@ -1,9 +1,13 @@
 import AdminSiderbar from "./AdminSiderbar";
+import type { Metadata } from "next";
 
 interface AdminDashboardLayoutProps {
   children: React.ReactNode;
 }
-
+export const metadata: Metadata = {
+  title: "ِAdmin Dashboard",
+  description: "This is admin dashboard",
+};
 const AdminDashboardLayout = ({ children }: AdminDashboardLayoutProps) => {
   return (
     <div className="overflow-height flex items-start justify-between overflow-hidden">
