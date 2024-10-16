@@ -6,7 +6,7 @@ import Pagination from "@/components/articles/Pagination";
 
 const ArticlePage = async () => {
   //delay 10s
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  // await new Promise((resolve) => setTimeout(resolve, 10000));
   const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "no-store",
     // next: { revalidate:50 },
