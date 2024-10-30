@@ -1,2 +1,5 @@
-install package zod 
-zod is validation
+ORM --> object -relational mapping 
+npx prisma init
+npx prisma format
+npx prisma migrate dev
+npx prisma studio
