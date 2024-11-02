@@ -1,5 +1,4 @@
-ORM --> object -relational mapping 
-npx prisma init
-npx prisma format
-npx prisma migrate dev
-npx prisma studio
+prisma problem resolved
+cause of error is reload
+link:
+https://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices
