@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/utils/db";
-import jwt from "jsonwebtoken";
-import { JWTPayload } from "@/utils/types";
+
 import { verifyToken } from "@/utils/verifyToken";
 interface Props {
   params: { id: string };
