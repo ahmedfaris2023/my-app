@@ -31,3 +31,10 @@ export const creaetCommentShema = z.object({
   text: z.string().min(2).max(500),
   articleId: z.number(),
 });
+
+//Update user profile schema
+export const updateUserSchema = z.object({
+  username: z.string().min(2).max(100).optional(),
+  email: z.string().min(3).max(200).email().optional(),
+  password: z.string().min(6).optional(),
+});
